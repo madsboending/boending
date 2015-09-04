@@ -1,4 +1,3 @@
-
 #' Plot flere diagrammer på én side.
 #'
 #' Funktionen gør det muligt at plotte flere diagrammer på samme side. Funktionen er skamløst kopieret fra http://www.cookbook-r.com/Graphs/Multiple_graphs_on_one_page_(ggplot2)/
