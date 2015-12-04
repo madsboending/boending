@@ -17,7 +17,7 @@
 growth <- function(x, y, z){
 abs.v <- x-y 
   
-prop.v <- dplyr::mutate(z, vk=if(abs.v>1000) {(x-y)/y} else {NA})
+prop.v <- dplyr::mutate(z, vk=ifelse(abs.v>=1000, (x-y)/y, NA ))
 return(prop.v)
 }
 
