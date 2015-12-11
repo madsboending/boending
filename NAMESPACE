@@ -3,4 +3,5 @@
 export(kilde)
 export(multiplot)
 export(nps)
+export(vaekst_ans)
 export(vaekst_oms)
