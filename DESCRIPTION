@@ -3,6 +3,8 @@ Title: boending
 Version: 0.0.0.9000
 Authors@R: person("Mads", "Bønding", email = "mads_boending@hotmail.com", role = c("aut", "cre"))
 Description: Samling af personlige funktioner
-Depends: R (>= 3.2.2)
+Depends:
+    R (>= 3.2.2)
 License: MIT
 LazyData: true
+RoxygenNote: 5.0.1
