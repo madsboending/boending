@@ -1,7 +1,7 @@
 #' Hurtig udregning af Net Promotor Score
 #'
 #' Funktionen udregner net promotor score.
-#' @param x er en integer som udelukkende indeholder nps værdier 1-10 .
+#' @param x er en integer som udelukkende indeholder nps vÃ¦rdier 1-10 .
 #' @keywords net promotor score
 #' @export
 #' @examples
@@ -11,10 +11,10 @@
 #' nps(dat)
 #' 
 
-nps <- function(x){
-  promotors <- prop.table(table(x>8))
+nps <- function(data=x, y){
+  promotors <- length(x[y>8,])/length(x$y)
   
-  detractors <- prop.table(table(x<7))
+  detractors <- length(x[y<7,])/length(x$y)
   
   result <- promotors-detractors
   return(result)
